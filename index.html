@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- high chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  </head>
+  <body>
+
+
+    <header>
+        <div class="container mt-3">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #89b2af;">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Ekub</a>
+                      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="row mt-5">
+                <div class="col d-flex justify-content-center">
+                    <a> <h1> Welcome </h1> </a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col d-flex justify-content-center">
+                    <a>
+                        In Ethiopia, it is commonly referred to as an “Ekub”, which in English is a Rotating Savings <br> 
+                        and Credit Association (ROSCA). This is where a pot of funds is collected by a group of people <br>
+                        who each contribute the same amount and then one person every meeting is selected at random <br>
+                        to receive the pot. 
+                        <br>
+                    </a>
+                </div> 
+            </div>
+            <div class="row">
+
+        </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="container border border-1 border-info rounded-3 py-5 mt-5 ">
+            <div class="row mx-5">
+                <div class="col">
+                    <input id="name" type="text" placeholder="Enter name">
+                </div>
+            </div>
+            <div class="row mx-5 mt-2">
+                <div class="col">
+                    <input id="amount" type="number" placeholder="Enter amount">
+                </div>
+            </div>
+            <div class="row mx-5 mt-3">
+                <div class="col">
+                    <button class="btn btn-secondary" id="sub">Procced</button>
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col">
+                    <div class="container mt-3">
+                        <table class="table table-bordered border-primary table-success table-striped" id="display">
+                            <thead>
+                                <tr class="table table-success table-striped">
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Amount</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mx-5 mt-2">
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-secondary" id="shuffle">Shuffle</button>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row"> 
+                    <div class="col lg-6 d-flex justify-content-center">
+                        <h1 id="displo"></h1>
+                    </div>
+                </div>
+                
+            </div>
+    
+            </div>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                            Display Chart
+                            </button>
+                        </p>
+                          <div style="min-height: 100px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                    <div class="card card-body" style="width: 1000px;">
+                                        <figure class="highcharts-figure">
+                                            <div id="container"></div>
+                                            <button id="plain">Plain</button>
+                                            <button id="inverted">Inverted</button>
+                                            <button id="polar">Polar</button>
+                                          </figure>
+                                    </div>
+                                </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="container px-3">
+        <section class="">
+            <!-- Footer -->
+            <footer class="text-center text-white" style="background-color: #89b2af;">
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                  <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">Ekub</span>
+                    <button type="button" class="btn btn-outline-light btn-rounded">
+                      Sign up!
+                    </button>
+                  </p>
+                </section>
+                <!-- Section: CTA -->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                2022:
+                <a class="text-white" href="#">Ekub.com</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+          </section>
+    </div>
+
+  </body>
+    
+   
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+
+
+    
+    
+</html>
